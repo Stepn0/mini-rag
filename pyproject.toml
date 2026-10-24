@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-rag"
+version = "0.1.0"
+description = "Retrieval-Augmented Generation from scratch in pure Python: chunking, BM25 + TF-IDF hybrid retrieval, reciprocal rank fusion, reranking, citations, evaluation. Zero dependencies, pluggable LLM."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Stepn0" }]
+keywords = ["rag", "retrieval", "bm25", "tf-idf", "llm", "search", "information-retrieval"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Text Processing :: Indexing",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Stepn0/mini-rag"
+Issues = "https://github.com/Stepn0/mini-rag/issues"
+
+[project.scripts]
+minirag = "minirag.cli:main"
+
+[tool.setuptools]
+packages = ["minirag"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]

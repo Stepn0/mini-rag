@@ -1,0 +1,14 @@
+[
+  {"question": "What does the KV cache store and why does it reduce decoding cost?", "gold_doc": "kv_cache.md"},
+  {"question": "Why are attention scores divided by the square root of the key dimension?", "gold_doc": "attention.md"},
+  {"question": "How does an HNSW search move between layers?", "gold_doc": "hnsw.md"},
+  {"question": "What do the k1 and b parameters control in BM25?", "gold_doc": "bm25.md"},
+  {"question": "What is the difference between post-training quantization and quantization-aware training?", "gold_doc": "quantization.md"},
+  {"question": "How does byte-pair encoding build its vocabulary?", "gold_doc": "tokenization.md"},
+  {"question": "What is the difference between pre-filtering and post-filtering in a vector database?", "gold_doc": "vector_databases.md"},
+  {"question": "How should a client handle an HTTP 429 response from an LLM API?", "gold_doc": "rate_limiting.md"},
+  {"question": "What does recall@k measure in RAG evaluation?", "gold_doc": "rag_evaluation.md"},
+  {"question": "What is the purpose of positional encodings in a Transformer?", "gold_doc": "transformers.md"},
+  {"question": "How does grouped-query attention shrink the KV cache?", "gold_doc": "kv_cache.md"},
+  {"question": "What is faithfulness in a RAG answer?", "gold_doc": "rag_evaluation.md"}
+]
